@@ -1,7 +1,5 @@
 <template>
-    <div class="container sm mx-auto px-8 h-screen flex flex-col justify-center">
-        <p>Player card page for {{ username }}</p>
-    </div>
+    <PlayerCardFront :username='username' :player-data='playerData.global' :legend-data='playerData.legends?.selected' />
 </template>
 
 <script>
@@ -18,8 +16,6 @@
             const { data } = await this.$axios.get(`https://api.mozambiquehe.re/bridge?auth=1bfc0ae82a9ab91df77bab1d62b15e7a&player=${this.username}&platform=${this.platform}`);
 
             this.playerData = data;
-
-            console.log(this.playerData);
         }
     }
 </script>
