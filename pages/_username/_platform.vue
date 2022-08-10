@@ -1,5 +1,7 @@
 <template>
-    <p>Player card page for {{ username }}</p>
+    <div class="container sm mx-auto px-8 h-screen flex flex-col justify-center">
+        <p>Player card page for {{ username }}</p>
+    </div>
 </template>
 
 <script>
