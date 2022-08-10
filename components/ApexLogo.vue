@@ -1,8 +1,6 @@
 <template>
-    <div>
+    <div class="container flex justify-center">
         <img src="~assets/apex-legends-logo.svg" class="apex-legends-logo" />
-        <h1>Live Player Card Generator</h1>
-        <p>Fill out form below to generate a live card for your currently selected (in game) legend.</p>
     </div>
 </template>
 
