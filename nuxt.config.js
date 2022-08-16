@@ -33,7 +33,8 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     '@nuxtjs/svg',
-    '@nuxt/postcss8'
+    '@nuxt/postcss8',
+    '@nuxtjs/google-fonts'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -67,6 +68,13 @@ export default {
     },
     fileLoader: {
         // file-loader options
+    }
+  },
+
+  googleFonts: {
+    families: {
+      'Bebas Neue': true,
+      'Metal Mania': true
     }
   }
 }
